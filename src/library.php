@@ -36,4 +36,3 @@ class Library {
         return $this->books;
     }
 }
-?>
