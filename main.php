@@ -26,4 +26,3 @@ echo "\nКниги автора 'Лев Толстой':\n";
 for ($i = 0; $i < count($booksByTolstoy); $i++) {
     echo $booksByTolstoy[$i]->getBookInfo() . "\n";
 }
-?>
