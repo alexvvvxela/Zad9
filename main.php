@@ -7,8 +7,8 @@ use Alexv\Zad9\Book;
 
 $library = new Library();
 $book1 = new Book("Война и мир", "Лев Толстой", 1869, "Роман");
-$book2 = new Book("1984", "Джордж Оруэлл", 1949, "Научная фантастика");
-$book3 = new Book("Мастер и Маргарита", "Михаил Булгаков", 1967, "Роман");
+$book2 = new Book("Преступление и наказание", "Фёдор Достоевский", 1866, "Роман");
+$book3 = new Book("Собачье сердце", "Михаил Булгаков", 1925, "Роман");
 $library->addBook($book1);
 $library->addBook($book2);
 $library->addBook($book3);
