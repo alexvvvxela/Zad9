@@ -2,54 +2,64 @@
 
 namespace Alexv\Zad9;
 
-class Book {
+class Book
+{
     private $title;
     private $author;
     private $publishedYear;
     private $genre;
 
-    public function __construct($title, $author, $publishedYear, $genre) {
+    public function __construct($title, $author, $publishedYear, $genre)
+    {
         $this->title = $title;
         $this->author = $author;
         $this->publishedYear = $publishedYear;
         $this->genre = $genre;
     }
 
-    public function getTitle() {
+    public function getTitle(): string
+    {
         return $this->title;
     }
 
-    
-    public function getBookInfo() {
+
+    public function getBookInfo(): string
+    {
         return "Название: {$this->title}, Автор: {$this->author}, Год публикации: {$this->publishedYear}, Жанр: {$this->genre}";
     }
-    
-    public function setTitle($title) {
+
+    public function setTitle($title): void
+    {
         $this->title = $title;
     }
 
-    public function getAuthor() {
+    public function getAuthor(): string
+    {
         return $this->author;
     }
 
-    public function setAuthor($author) {
+    public function setAuthor($author): void
+    {
         $this->author = $author;
     }
 
-    public function getPublishedYear() {
+    public function getPublishedYear(): int
+    {
         return $this->publishedYear;
     }
 
-    public function setPublishedYear($publishedYear) {
+    public function setPublishedYear($publishedYear): void
+    {
         $this->publishedYear = $publishedYear;
     }
 
-    public function getGenre() {
+    public function getGenre(): string
+    {
         return $this->genre;
     }
 
-    public function setGenre($genre) {
+    public function setGenre($genre)
+    {
         $this->genre = $genre;
     }
-
 }
