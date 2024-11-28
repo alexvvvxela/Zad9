@@ -58,7 +58,7 @@ class Book
         return $this->genre;
     }
 
-    public function setGenre($genre)
+    public function setGenre($genre) :void
     {
         $this->genre = $genre;
     }
