@@ -6,14 +6,14 @@ use Alexv\Zad9\Book;
 
 class Library
 {
-    private $books = [];
+    private array $books = [];
 
     public function addBook(Book $book): void
     {
         $this->books[] = $book;
     }
 
-    public function removeBookBByTitle($title): bool
+    public function removeBookBByTitle(string $title): bool
     {
         for ($index = 0; $index < count($this->books); $index++) {
             if ($this->books[$index]->getTitle() === $title) {
@@ -25,12 +25,12 @@ class Library
         return false;
     }
 
-    public function findBooksByAuthor2($author): array
+    public function findBooksByAuthor2(string $author): array
     {
         $foundBooks = [];
-        for ($i = 0; $i < count($this->books); $i++) {
-            if ($this->books[$i]->getAuthor() === $author) {
-                $foundBooks[] = $this->books[$i];
+        foreach ($this->books as $book) {
+            if ($book->getAuthor() === $author) {
+                $foundBooks[] = $book;
             }
         }
         return $foundBooks;
@@ -41,4 +41,5 @@ class Library
         return $this->books;
     }
 }
+
 
